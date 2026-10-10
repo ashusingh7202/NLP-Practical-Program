@@ -1,320 +1,131 @@
-# NLP Unit 1 Practical Programs
+# NLP Lab Programs — CO1 & CO2
 
-This repository contains the **Unit 1 Practical Programs for Natural Language Processing (NLP)** using **Python, NLTK, and spaCy**.
-
-The programs cover fundamental NLP techniques such as text tokenization, stemming, lemmatization, stop-word removal, POS tagging, parsing, chunking, and Named Entity Recognition.
-
----
+This repository contains practical programs for **Natural Language Processing (NLP)** using Python and popular NLP libraries. It covers fundamental text-processing techniques, word representations, text classification, sentiment analysis, topic modeling, information extraction, and information retrieval.
 
 ## 📚 List of Programs
 
-| S. No. | Practical Program                                        |  CO |
-| :----: | -------------------------------------------------------- | :-: |
-|    1   | Tokenization of Sentences and Words using NLTK and spaCy | CO1 |
-|    2   | Stemming and Lemmatization on Sample Text                | CO1 |
-|    3   | Stop-word Removal from a Document                        | CO1 |
-|    4   | Part-of-Speech (POS) Tagging of a Given Sentence         | CO1 |
-|    5   | Parsing and Chunking using RegEx and spaCy               | CO1 |
-|    6   | Named Entity Recognition (NER) using spaCy               | CO1 |
-
----
-
-# 1. Tokenization of Sentences and Words
-
-### Aim
-
-To perform **sentence and word tokenization** using NLTK and spaCy.
-
-### Description
-
-Tokenization is the process of dividing a text into smaller units called **tokens**. Tokens can be individual words or sentences.
-
-### Technologies Used
-
-* Python
-* NLTK
-* spaCy
-
-### Concepts Covered
-
-* Sentence Tokenization
-* Word Tokenization
-* NLTK Tokenization
-* spaCy Tokenization
-
----
-
-# 2. Stemming and Lemmatization
-
-### Aim
-
-To perform **stemming and lemmatization** on sample text.
-
-### Description
-
-**Stemming** reduces words to their root form by removing prefixes or suffixes.
-
-**Lemmatization** converts words into their meaningful dictionary or base form.
-
-### Example
-
-| Word    | Stem   | Lemma |
-| ------- | ------ | ----- |
-| playing | play   | play  |
-| studies | studi  | study |
-| running | run    | run   |
-| better  | better | good  |
-
-### Technologies Used
-
-* Python
-* NLTK
-* Porter Stemmer
-* WordNet Lemmatizer
-
----
-
-# 3. Stop-word Removal
-
-### Aim
-
-To remove stop words from a given document using NLTK.
-
-### Description
-
-Stop words are commonly occurring words that usually provide limited useful information for many NLP tasks.
-
-### Examples
-
-```text
-the
-is
-are
-a
-an
-and
-in
-on
-it
-they
-```
-
-### Technologies Used
-
-* Python
-* NLTK
-* NLTK Stopwords Corpus
-
----
-
-# 4. Part-of-Speech (POS) Tagging
-
-### Aim
-
-To perform **Part-of-Speech tagging** on a given sentence.
-
-### Description
-
-POS tagging assigns a grammatical category to each word in a sentence.
-
-### Common POS Tags
-
-| Tag | Meaning       |
-| --- | ------------- |
-| NN  | Noun          |
-| NNS | Plural Noun   |
-| VB  | Verb          |
-| VBG | Verb - Gerund |
-| JJ  | Adjective     |
-| RB  | Adverb        |
-| DT  | Determiner    |
-| PRP | Pronoun       |
-
-### Example
-
-```text
-The -> DT
-students -> NNS
-are -> VBP
-learning -> VBG
-NLP -> NN
-```
-
-### Technologies Used
-
-* Python
-* NLTK
-
----
-
-# 5. Parsing and Chunking using RegEx and spaCy
-
-### Aim
-
-To perform **parsing and chunking** using Regular Expressions and spaCy.
-
-### Description
-
-Parsing analyzes the grammatical structure of a sentence.
-
-Chunking groups related words into meaningful phrases such as **Noun Phrases (NP)**.
-
-### Example
-
-Input:
-
-```text
-The quick brown fox jumps over the lazy dog.
-```
-
-Noun phrases:
-
-```text
-The quick brown fox
-the lazy dog
-```
-
-### Technologies Used
-
-* Python
-* NLTK
-* RegEx
-* spaCy
-* RegexpParser
-
----
-
-# 6. Named Entity Recognition (NER)
-
-### Aim
-
-To identify and classify named entities in a given text using spaCy.
-
-### Description
-
-Named Entity Recognition identifies important entities such as people, organizations, locations, dates, and monetary values.
-
-### Common NER Labels
-
-| Label  | Meaning               | Example        |
-| ------ | --------------------- | -------------- |
-| PERSON | Person                | Ashutosh       |
-| ORG    | Organization          | Microsoft      |
-| GPE    | Geographical Location | Delhi          |
-| DATE   | Date                  | 15 August 2026 |
-| MONEY  | Monetary Value        | ₹5000          |
-| TIME   | Time                  | 10 AM          |
-
-### Technologies Used
-
-* Python
-* spaCy
-* `en_core_web_sm`
-
----
-
-# 🛠️ Requirements
-
-The practical programs are developed using **Python 3**.
-
-Required libraries:
-
-```text
-nltk
-spacy
-```
-
-Install them using:
+### CO1 — NLP Fundamentals
+
+| S. No. | Practical Program |
+|:---:|---|
+| 1 | Tokenization of Sentences and Words using NLTK and spaCy |
+| 2 | Stemming and Lemmatization on Sample Text |
+| 3 | Stop-word Removal from a Document |
+| 4 | Part-of-Speech (POS) Tagging of a Given Sentence |
+| 5 | Parsing and Chunking using RegEx and spaCy |
+| 6 | Named Entity Recognition (NER) using spaCy |
+
+### CO2 — Text Representation and Advanced NLP
+
+| S. No. | Practical Program |
+|:---:|---|
+| 8 | Bag-of-Words (BoW) Vectorization and Representation |
+| 9 | TF-IDF Implementation and Comparison with BoW |
+| 10 | N-Gram Model (Unigram, Bigram, Trigram) Generation |
+| 11 | Cosine Similarity Between Text Documents |
+| 12 | Word2Vec Word Embeddings using Gensim |
+| 13 | GloVe Embeddings Loading and Vector Representation |
+| 14 | Text Similarity using Word Mover's Distance (WMD) |
+| 15 | Text Classification using Naïve Bayes and SVM with TF-IDF |
+| 16 | Sentiment Analysis using TextBlob and VADER |
+| 17 | Topic Modeling using Latent Dirichlet Allocation (LDA) |
+| 18 | Topic Modeling using Latent Semantic Analysis (LSA) |
+| 19 | Opinion Mining on Product/Service Reviews |
+| 20 | Information Extraction from Structured and Unstructured Documents |
+| 21 | Information Retrieval System with TF-IDF Ranking |
+
+## 🛠️ Technologies Used
+
+- Python 3
+- NLTK
+- spaCy
+- scikit-learn
+- Gensim
+- TextBlob
+- VADER Sentiment
+- NumPy
+- Regular Expressions (RegEx)
+- Jupyter Notebook
+
+## ⚙️ Installation
+
+Install the required libraries:
 
 ```bash
-pip install nltk spacy
+pip install nltk spacy scikit-learn gensim textblob vaderSentiment numpy scipy
 ```
 
-For spaCy's English language model:
+Download the spaCy English model:
 
 ```bash
 python -m spacy download en_core_web_sm
 ```
 
----
-
-# ▶️ Running the Programs
-
-The programs are provided as **Jupyter Notebook (`.ipynb`) files**.
-
-They can be executed using:
-
-* Google Colab
-* Jupyter Notebook
-* JupyterLab
-* VS Code
-* PyCharm
-
-## Google Colab
-
-Upload the required `.ipynb` file to Google Colab and run the cells sequentially.
-
-For spaCy programs, the English model can be installed using:
-
-```python
-!python -m spacy download en_core_web_sm
-```
-
-For NLTK programs, required resources can be downloaded using:
+Download required NLTK resources when needed:
 
 ```python
 import nltk
 
 nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
 ```
 
----
+Some programs using GloVe or Word2Vec pretrained embeddings may require an internet connection to download models.
 
-# 📂 Repository Contents
+## ▶️ Running the Programs
+
+1. Clone or download this repository.
+2. Open the project in VS Code, PyCharm, Jupyter Notebook, or another Python environment.
+3. Install the required libraries.
+4. Open the `CO1` or `CO2` folder.
+5. Run the required Python program.
+
+## 📂 Repository Structure
 
 ```text
-NLP-Unit-1-Practical-Program/
-│
-├── 1_Tokenization_of_Sentences_and_Words_using_NLTK_and_spacy.ipynb
-├── 2_Stemming_and_Lemmatization_on_Sample_Text.ipynb
-├── 3_Stop_word_Removal_from_a_Document.ipynb
-├── 4_Part_of_Speech_POS_Tagging_of_a_Given_Sentence.ipynb
-├── 5_Parsing_and_Chunking_using_RegEx_and_spaCy.ipynb
-├── 6_Named_Entity_Recognition_NER_using_spaCy.ipynb
+NLP-Practical-Program/
+├── NLP-Lab-Programs/
+│   ├── CO1/
+│   │   ├── 01_Tokenization.py
+│   │   ├── 02_Stemming_Lemmatization.py
+│   │   ├── 03_Stopword_Removal.py
+│   │   ├── 04_POS_Tagging.py
+│   │   ├── 05_Parsing_Chunking.py
+│   │   └── 06_NER.py
+│   ├── CO2/
+│   │   ├── 08_BOW.py
+│   │   ├── 09_TFIDF.py
+│   │   ├── 10_NGram.py
+│   │   └── ...
+│   └── README.md
 └── README.md
 ```
 
----
+*The filenames above illustrate the intended organization; adjust them to match your actual files.*
 
-# 🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
-After completing these practical programs, the following fundamental NLP concepts are demonstrated:
+After completing these practical programs, students will be able to:
 
-1. Sentence and word tokenization
-2. Stemming and lemmatization
-3. Stop-word removal
-4. Part-of-Speech tagging
-5. Parsing and chunking
-6. Named Entity Recognition
+1. Process text using tokenization, stemming, and lemmatization.
+2. Remove stop words and perform POS tagging.
+3. Analyze sentence structure and identify named entities.
+4. Represent documents using BoW and TF-IDF.
+5. Generate n-grams and compare text documents.
+6. Work with Word2Vec and GloVe word embeddings.
+7. Build text classifiers using Naïve Bayes and SVM.
+8. Perform sentiment analysis and opinion mining.
+9. Discover topics using LDA and LSA.
+10. Extract information and rank search results using TF-IDF.
 
-These techniques form the foundation of many **Natural Language Processing pipelines**.
+## 👨‍💻 Author
 
----
+**Ashutosh Singh**
 
-# 💻 Technologies Used
+B.Tech — Computer Science & Engineering (AI)
 
-* **Python**
-* **NLTK**
-* **spaCy**
-* **Regular Expressions (RegEx)**
-* **Jupyter Notebook**
-* **Google Colab**
-
----
-
-# 👨‍💻 Author
-
-**Ashutosh Singh 2401331520057 AI A**
-
-B.Tech – Computer Science & Engineering (AI)
+Roll No.: 2401331520057 | Section: AI A
